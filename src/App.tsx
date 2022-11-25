@@ -1,6 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Canvas } from "@react-three/fiber";
 
 function App() {
   return (
@@ -18,6 +19,14 @@ function App() {
         >
           Learn React
         </a>
+        <div id="canvas-container">
+          <Canvas>
+            <mesh>
+              <boxGeometry />
+              <meshStandardMaterial />
+            </mesh>
+          </Canvas>
+        </div>
       </header>
     </div>
   );
